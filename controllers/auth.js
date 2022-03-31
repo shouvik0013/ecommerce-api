@@ -97,7 +97,7 @@ exports.postSignup = (req, res, next) => {
         throw error;
       }
 
-      res.status(200).json({ message: "User created", userId: userDoc._id });
+      res.status(200).json({ message: "User created", userId: userDoc._id,  email: userDoc.email, });
     })
     .catch((err) => {
       if (!err.statusCode) {
