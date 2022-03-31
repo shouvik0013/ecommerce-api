@@ -8,6 +8,8 @@ const router = express.Router();
 
 router.post("/login", authController.postLogin);
 
+
+// Fields  email, name, password
 router.post(
   "/signup",
   [

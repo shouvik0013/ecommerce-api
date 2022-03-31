@@ -7,6 +7,7 @@ const isAuth = require("../middleware/is-auth");
 const router = express.Router();
 
 // PATH: /admin/product
+// Fields    title, price, image, description
 router.post(
   "/add-product",
   [
