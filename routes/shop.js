@@ -6,7 +6,7 @@ const isAuth = require("../middleware/is-auth");
 // router is also kind of app or a pluggable app
 const router = express.Router();
 
-// PATH: /products/1      here 1 will return first 5 products, if we pass 2 it will return next 5 results
+// PATH: /products?productPageIndex=1      here 1 will return first 5 products, if we pass 2 it will return next 5 results
 router.get("/products", isAuth, shopController.getProducts);
 // PATH: /products/874729902
 router.get("/products/:productId", isAuth, shopController.getProduct);
