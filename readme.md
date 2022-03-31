@@ -8,5 +8,5 @@ You can change PORT, MONGODB_URI, SECRET_KEY, TEMP_UPLOAD_PATH in ./env/.dev.env
 
 To start development server run - "npm start" 
 
-create a new user the first
+Create a new user first
 
